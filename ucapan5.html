@@ -16,7 +16,7 @@ $nama = $_POST['nama'] ?? 'Sayang';
         <img src="assets/images/ketawa.png" alt="Vector" class="vector-img">
         <h2> <?= htmlspecialchars($nama) ?>, Tau Nggakkkk </h2>
         <p>Jadi, Itu kata-kata sebelumnya itu pesan dari sugi buat kamu. Aku cuma nyampein aja, Wkwkwk</p>
-        <form action="done.php" method="POST" id="form">
+        <form action="done.html" method="POST" id="form">
             <input type="hidden" name="nama" value="<?= htmlspecialchars($nama) ?>">
             <button type="submit" class="button-next" id="nextBtn">👉 Last dahhh</button>
         </form>
