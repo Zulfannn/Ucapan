@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="bg1">
+    <div class="card custom-card card1">
+        <img src="assets/images/hallo.png" alt="Love Image" class="vector-img">
+        <h2>Aku Mau Ngucapin Sesuatu</h2>
+        <form action="ucapan2.php" method="POST">
+            <input type="text" name="nama" placeholder="Isi Nama Lu Dulu Gak Sihhh" required class="input-text"><br><br>
+            <button type="submit" class="button-next">💌 Klik aja Kalo Kepo</button>
+        </form>
+    </div>
+</body>
+
+</html>

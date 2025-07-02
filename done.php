@@ -1,0 +1,23 @@
+<?php
+$nama = $_POST['nama'] ?? 'Sayang';
+?>
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finish</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="bg-done">
+    <div class="card custom-card flip-card">
+        <img src="assets/images/done.png" alt="Thanks" class="vector-img">
+        <h2>Gausah Marahhh, dah Tua Nanti Cepet Mati, Ingat Itu Yaaaa <?= htmlspecialchars($nama) ?></h2>
+        <p>BTW Makan Makan Gak Sihhh</p>
+        <a href="https://wa.me/685868528039?text=Terima%20kasih%20<?= urlencode($nama) ?>%20atas%20ucapan%20ulang%20tahunnya%20🥰" class="button-next" target="_blank">💬 Balas via WhatsApp</a>
+    </div>
+</body>
+
+</html>

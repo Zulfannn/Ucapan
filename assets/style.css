@@ -1,0 +1,146 @@
+/* === Reset & Umum === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* ubah dari height jadi min-height */
+  transition: background 0.5s ease;
+  text-align: center;
+  background: #fff;
+  flex-direction: column; /* agar konten tidak dipaksa ke tengah saat tinggi kecil */
+}
+
+
+/* === Background Variatif Tiap Halaman === */
+.bg1 {
+  background: linear-gradient(135deg, #ffe1e1, #ffc9de); /* Pink love */
+}
+
+.bg2 {
+  background: linear-gradient(135deg, #d3f4ff, #a1e3ff); /* Biru muda */
+}
+
+.bg3 {
+  background: linear-gradient(135deg, #e9d5ff, #c7b8f5); /* Ungu lembut */
+}
+
+.bg4 {
+  background: linear-gradient(135deg, #fffacc, #ffe89e); /* Kuning lembut */
+}
+
+.bg5 {
+  background: linear-gradient(135deg, #ffe3ec, #ffd6e0); /* Peach pink */
+}
+
+.bg-done {
+  background: linear-gradient(135deg, #d2f6c5, #a7e9af); /* Hijau lembut */
+}
+
+/* === Card Utama === */
+.card {
+  max-width: 500px;
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  animation: fadeIn 1s ease;
+  position: relative;
+}
+
+/* Card Tambahan Class */
+.custom-card {
+  text-align: center;
+}
+
+/* === Gambar Vector === */
+.vector-img {
+  max-width: 200px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* === Input Form === */
+.input-text {
+  width: 90%;
+  padding: 12px 15px;
+  font-size: 1em;
+  border-radius: 15px;
+  border: 2px solid #ddd;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* === Tombol === */
+.button-next {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff6f91;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.button-next:hover {
+  background-color: #ff3f6d;
+}
+
+/* === Fade In Animasi === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Flip Out untuk Transisi Halaman === */
+.flip-card {
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-out {
+  transform: rotateY(90deg);
+  opacity: 0;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 20px 15px;
+  }
+
+  .vector-img {
+    max-width: 150px;
+  }
+
+  .input-text {
+    font-size: 0.9em;
+    padding: 10px 12px;
+  }
+
+  .button-next {
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 0.95em;
+  }
+}
